@@ -2,13 +2,18 @@
 package main
 
 // define an author type with a name
-//
+type author struct {
+	name string
+}
 
 // define a book type with a title and author
-//
+type book struct {
+	title string 
+	author author
+}
 
 // define a library type to track a list of books
-//
+type library map[string][]book
 
 // define addBook to add a book to the library
 //
